@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Lovie</title>
+  <meta name="description" content="Get in touch with Lovie — available for freelance projects and collaborations." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">L<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════ -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Section Header -->
+        <span class="section-tag">Say Hello</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I'm currently available for freelance work and open to new 
+          opportunities. Drop me a message and I'll get back to you soon!
+        </p>
+
+        <!-- Two-column layout: Info + Form -->
+        <div class="contact-grid">
+
+          <!-- LEFT: Contact info -->
+          <div class="contact-info">
+
+            <h2 style="margin-bottom: 1rem;">Let's work together.</h2>
+            <p>
+              Whether you have a project in mind, a question, or just 
+              want to say hi — my inbox is always open.
+            </p>
+
+            <div class="contact-details" style="margin-top: 2rem;">
+
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span>Email</span>
+                  <strong>lovie@example.com</strong>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span>Location</span>
+                  <strong>Nairobi, Kenya 🇰🇪</strong>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span>Response time</span>
+                  <strong>Within 24 hours</strong>
+                </div>
+              </div>
+
+            </div><!-- /.contact-details -->
+
+            <!-- Availability badge -->
+            <div style="
+              display: inline-flex; 
+              align-items: center; 
+              gap: 0.6rem; 
+              margin-top: 2.5rem; 
+              background: #f0fdf4; 
+              border: 1px solid #86efac; 
+              color: #166534;
+              padding: 0.55rem 1.1rem; 
+              border-radius: 20px;
+              font-size: 0.82rem;
+              font-weight: 500;
+            ">
+              <!-- Green dot indicator -->
+              <span style="
+                width: 8px; height: 8px; 
+                background: #22c55e; 
+                border-radius: 50%;
+                animation: pulse-green 2s ease infinite;
+                display: inline-block;
+              "></span>
+              Available for new projects
+            </div>
+
+            <!-- Inline style for pulse animation -->
+            <style>
+              @keyframes pulse-green {
+                0%, 100% { opacity: 1; transform: scale(1); }
+                50%       { opacity: 0.6; transform: scale(1.3); }
+              }
+            </style>
+
+          </div><!-- /.contact-info -->
+
+
+          <!-- RIGHT: Contact Form -->
+          <div>
+
+            <!-- The form itself -->
+            <form class="contact-form" id="contactForm" novalidate>
+
+              <!-- Name field -->
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Jane Doe"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- Email field -->
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g. jane@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- Message field -->
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project or just say hi..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Send Message
+                <!-- Arrow icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+
+            </form>
+
+            <!-- Success message (hidden until form submitted) -->
+            <div class="form-success contact-form" id="formSuccess">
+              <div class="form-success-icon">🎉</div>
+              <h3 style="font-family: var(--font-display); margin-bottom: 0.5rem;">
+                Message Sent!
+              </h3>
+              <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+              <button
+                class="btn btn-outline"
+                style="margin-top: 1.5rem;"
+                onclick="
+                  document.getElementById('formSuccess').classList.remove('show');
+                  document.getElementById('formSuccess').style.display='none';
+                  document.getElementById('contactForm').style.display='block';
+                  document.getElementById('contactForm').reset();
+                "
+              >
+                Send Another
+              </button>
+            </div>
+
+          </div><!-- /form column -->
+
+        </div><!-- /.contact-grid -->
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Lovie.</span>
+        <p class="footer-copy">&copy; 2025 Lovie. Built with ♥ and lots of CSS.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
