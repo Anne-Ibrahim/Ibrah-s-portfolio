@@ -1,4 +1,4 @@
-# Lovie's Portfolio Website
+# Annah's Portfolio Website
 
 A clean, modern, beginner-friendly portfolio website built with HTML, CSS, and JavaScript.
 
