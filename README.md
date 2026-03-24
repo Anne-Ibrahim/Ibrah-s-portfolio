@@ -1,6 +1,6 @@
 # Annah's Portfolio Website
 
-A clean, modern, beginner-friendly portfolio website built with HTML, CSS, and JavaScript.
+A clean, modern portfolio website built with HTML, CSS, and JavaScript.
 
 ## 📁 File Structure
 
